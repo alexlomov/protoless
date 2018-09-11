@@ -1,7 +1,6 @@
 package io.protoless.generic.decoding.internal
 
 import shapeless.Nat
-
 import io.protoless.generic.decoding.IncrementalDecoderInstances
 import io.protoless.messages.Decoder
 import io.protoless.messages.decoders.IncrementalDecoder

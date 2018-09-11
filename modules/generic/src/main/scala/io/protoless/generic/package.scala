@@ -1,7 +1,6 @@
 package io.protoless
 
 import shapeless.HList
-
 import io.protoless.messages.decoders.CustomMappingDecoder
 import io.protoless.messages.encoders.CustomMappingEncoder
 import io.protoless.generic.decoding.{AutoDecoderInstances, CustomMappingDecoderInstances}
@@ -20,7 +19,7 @@ package object generic {
     * You can still derive [[messages.decoders.CustomMappingDecoder]] and [[messages.encoders.CustomMappingEncoder]]
     * with `semiauto.deriveDecoder[A, L]` or by summoning a decoder with `CustomMappingDecoder[A, HList]` (idem for Encoders).
     */
-  object auto extends AutoDecoderInstances with CustomMappingDecoderInstances with AutoEncoderInstances with CustomMappingEncoderInstances
+  object auto extends AutoDecoderInstances with AutoEncoderInstances
 
   /**
     * Allows to manually derive [[Decoder]] and [[Encoder]],
